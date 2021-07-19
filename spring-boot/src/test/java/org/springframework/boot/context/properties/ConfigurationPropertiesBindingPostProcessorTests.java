@@ -45,7 +45,7 @@ import org.springframework.validation.BindException;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
-
+import org.springframework.boot.test.context.TestConfiguration;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.fail;
 
@@ -56,6 +56,7 @@ import static org.junit.Assert.fail;
  * @author Phillip Webb
  * @author Stephane Nicoll
  */
+@TestConfiguration
 public class ConfigurationPropertiesBindingPostProcessorTests {
 
 	@Rule
